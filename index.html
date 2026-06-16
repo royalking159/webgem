@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=home.html">
+    <title>Nicholas Stream</title>
+    <style>
+        body { background: #0b0914; color: white; font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .loader { border: 4px solid rgba(255,255,255,0.1); border-left-color: #8b5cf6; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 20px;}
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .container { display: flex; flex-direction: column; align-items: center; }
+    </style>
+    <script>
+        setTimeout(() => { window.location.replace("home.html"); }, 100);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <p>Initializing...</p>
+    </div>
+</body>
+</html>

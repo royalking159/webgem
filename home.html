@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Stream - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Global Sidebar Menu -->
+    <div class="sidebar">
+        <div class="logo-zone">
+            <span class="logo-text">nicholas</span>
+        </div>
+        <nav class="nav-menu">
+            <div class="nav-section-title">Menu</div>
+            <a href="home.html" class="nav-item active"><i class="fa-solid fa-film"></i> Movies & TV</a>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-music"></i> Music</a>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-code"></i> Projects</a>
+            
+            <div class="nav-section-title" style="margin-top: 30px;">Library</div>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-bookmark"></i> Watchlist</a>
+        </nav>
+    </div>
+
+    <!-- Main Dynamic Feed Container -->
+    <div class="main-content">
+        <header class="top-bar">
+            <div class="search-box glass-panel">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search movies, shows, music, or projects...">
+            </div>
+            <div class="user-profile">
+                <div class="avatar">N</div>
+            </div>
+        </header>
+
+        <main class="catalog-feed">
+            
+            <!-- Category 1: Movies & TV -->
+            <section class="category-row">
+                <h2 class="category-title">Continue Watching <span class="count">1</span></h2>
+                <div class="horizontal-scroll">
+                    <!-- Hazbin Hotel Card -->
+                    <a href="movie-detail.html" class="media-card">
+                        <div class="poster-wrapper">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNDExNjk4N2UtNjU0Ni00MWRhLWIwMDYtMTRkOWZlNWZkZWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Hazbin Hotel">
+                            <div class="badge rating"><i class="fa-solid fa-star"></i> 7.7</div>
+                            <div class="card-overlay">
+                                <div class="play-btn-circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-title">Hazbin Hotel</span>
+                            <div class="card-sub">
+                                <span class="card-year">2024</span>
+                                <span class="card-type">Series</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Category 2: Music -->
+            <section class="category-row">
+                <h2 class="category-title">Music <span class="count">0</span></h2>
+                <div class="horizontal-scroll empty-state glass-panel">
+                    <div class="empty-content">
+                        <i class="fa-solid fa-headphones-simple empty-icon"></i>
+                        <h3>Your Library is Empty</h3>
+                        <p class="placeholder-text">No audio tracks added to your music collection yet.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category 3: Projects -->
+            <section class="category-row">
+                <h2 class="category-title">Projects <span class="count">0</span></h2>
+                <div class="horizontal-scroll empty-state glass-panel">
+                    <div class="empty-content">
+                        <i class="fa-solid fa-laptop-code empty-icon"></i>
+                        <h3>No Projects Found</h3>
+                        <p class="placeholder-text">Code and live builds will appear here.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
