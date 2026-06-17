@@ -1,35 +1,123 @@
 {
   "show": "Hazbin Hotel",
   "rating": "7.7 / 10",
-  "years": "2024–Present",
+  "years": "2019–Present",
   "classification": "TV-MA",
   "avgRuntime": "24m",
   "genres": ["Musical", "Dark Comedy", "Animation"],
+  "mainThumbnail": "assets/images/hazbin-main-banner.jpg",
   "description": "In Hell, Charlie Morningstar pursues her seemingly impossible goal of rehabilitating demons to peacefully reduce overpopulation in her kingdom.",
   "seasons": [
     {
-      "seasonNumber": 1,
-      "tabLabel": "Season 1 (Full Index)",
+      "seasonNumber": "Specials",
+      "tabLabel": "Specials",
       "episodes": [
-        { "id": 1, "title": "Overture", "runtime": "25m", "desc": "Charlie pitches her project to heaven." },
-        { "id": 2, "title": "Radio Killed the Video Star", "runtime": "24m", "desc": "Alastor protects the hotel from Vox." },
-        { "id": 3, "title": "Scrambled Eggs", "runtime": "24m", "desc": "Trust exercises cause chaos among the crew." },
-        { "id": 4, "title": "Masquerade", "runtime": "24m", "desc": "Angel Dust struggles with his double life." }
+        { 
+          "id": 1, 
+          "title": "That's Entertainment (Official Pilot)", 
+          "runtime": "31m", 
+          "desc": "Charlie Morningstar introduces her ambitious project to the public through a chaotic live television broadcast, hoping to save sinner souls from the yearly purge.",
+          "thumbnail": "assets/images/specials-ep1-thumb.jpg"
+        },
+        { 
+          "id": 2, 
+          "title": "Addict (Music Video Special)", 
+          "runtime": "5m", 
+          "desc": "A deeper look into Angel Dust and Cherri Bomb's turbulent lives, coping mechanisms, and struggles under the oppressive rule of Valentino in the Pride Ring.",
+          "thumbnail": "assets/images/specials-ep2-thumb.jpg"
+        },
+        { 
+          "id": 3, 
+          "title": "Look My Way (Music Video Feature)", 
+          "runtime": "4m", 
+          "desc": "An emotional musical showcase exploring the complicated web of devotion, past mistakes, and long-distance ties impacting key residents of the hotel network.",
+          "thumbnail": "assets/images/specials-ep3-thumb.jpg"
+        }
+      ]
+    },
+    {
+      "seasonNumber": 1,
+      "tabLabel": "Season 1",
+      "episodes": [
+        { 
+          "id": 1, 
+          "title": "Overture", 
+          "runtime": "25m", 
+          "desc": "Charlie pitches her project to heaven, running into aggressive bureaucratic red tape while trying to prove that sinners deserve a chance at redemption.", 
+          "thumbnail": "assets/images/s1-ep1-thumb.jpg"
+        },
+        { 
+          "id": 2, 
+          "title": "Radio Killed the Video Star", 
+          "runtime": "24m", 
+          "desc": "Alastor protects the hotel from Vox and the modern media empire of the Vees as old rivalries flare up on Hell's broadcast networks.", 
+          "thumbnail": "assets/images/s1-ep2-thumb.jpg"
+        },
+        { 
+          "id": 3, 
+          "title": "Scrambled Eggs", 
+          "runtime": "24m", 
+          "desc": "Trust exercises cause chaos among the crew while Sir Pentious tries to infiltrate the hotel with an army of loyal but clumsy Egg Boiz.", 
+          "thumbnail": "assets/images/s1-ep3-thumb.jpg"
+        },
+        { 
+          "id": 4, 
+          "title": "Masquerade", 
+          "runtime": "24m", 
+          "desc": "Angel Dust struggles with his toxic double life as an adult media star under Valentino's demanding contract, forcing Husk to step in with hard truths.", 
+          "thumbnail": "assets/images/s1-ep4-thumb.jpg"
+        }
       ]
     },
     {
       "seasonNumber": 2,
-      "tabLabel": "Season 2 (Full Index)",
+      "tabLabel": "Season 2",
       "episodes": [
-        { "id": 1, "title": "New Pentious", "runtime": "28m", "desc": "Sir Pentious adjusts to his new reality." },
-        { "id": 2, "title": "Storyteller", "runtime": "28m", "desc": "Secrets of the past begin to unravel." },
-        { "id": 3, "title": "Hazbin Hotel: Behind Closed Doors", "runtime": "28m", "desc": "The hotel faces new structural challenges." },
-        { "id": 4, "title": "It's A Deal", "runtime": "29m", "desc": "Alastor's bargains come back into play." },
-        { "id": 5, "title": "Silenced", "runtime": "28m", "desc": "An unexpected silence falls over Hell's media." },
-        { "id": 6, "title": "Scream Rain", "runtime": "28m", "desc": "Tensions boil over into an all-out storm." },
-        { "id": 7, "title": "Weapon of Mass Distraction", "runtime": "29m", "desc": "The team scrambles to build a defense." },
-        { "id": 8, "title": "Curtain Call", "runtime": "38m", "desc": "The conclusion to the season's intense arc." }
-      ]
-    }
-  ]
-}
+        { 
+          "id": 1, 
+          "title": "New Pentious", 
+          "runtime": "28m", 
+          "desc": "Sir Pentious adjusts to his unexpected new reality in Heaven, navigating celestial social hierarchies while the hotel updates its mission statement down below.", 
+          "thumbnail": "assets/images/s2-ep1-thumb.jpg"
+        },
+        { 
+          "id": 2, 
+          "title": "Storyteller", 
+          "runtime": "28m", 
+          "desc": "Secrets of Lilith's mysterious absence and past bargains begin to unravel as new dynamic threats eye up the power vacuum left in the kingdom.", 
+          "thumbnail": "assets/images/s2-ep2-thumb.jpg"
+        },
+        { 
+          "id": 3, 
+          "title": "Hazbin Hotel: Behind Closed Doors", 
+          "runtime": "28m", 
+          "desc": "The hotel faces new structural challenges and internal disputes as daily therapeutic counseling tests the limits of the demonic residents.", 
+          "thumbnail": "assets/images/s2-ep3-thumb.jpg"
+        },
+        { 
+          "id": 4, 
+          "title": "It's A Deal", 
+          "runtime": "29m", 
+          "desc": "Alastor's tight-lipped bargains and underlying motivations come back into heavy play, shifting alliances among the overlords of Hell.", 
+          "thumbnail": "assets/images/s2-ep4-thumb.jpg"
+        },
+        { 
+          "id": 5, 
+          "title": "Silenced", 
+          "runtime": "28m", 
+          "desc": "An unexpected radio silence falls over Hell's media grid, triggering widespread paranoia regarding an impending systematic purge or regional revolt.", 
+          "thumbnail": "assets/images/s2-ep5-thumb.jpg"
+        },
+        { 
+          "id": 6, 
+          "title": "Scream Rain", 
+          "runtime": "28m", 
+          "desc": "Tensions boil over into an all-out storm inside the Pride Ring as internal team disagreements reach an explosive, emotional breaking point.", 
+          "thumbnail": "assets/images/s2-ep6-thumb.jpg"
+        },
+        { 
+          "id": 7, 
+          "title": "Weapon of Mass Distraction", 
+          "runtime": "29m", 
+          "desc": "The team scrambles to build a defensive perimeter and secure strategic fallback measures ahead of an aggressive counter-offensive by opposing factions.", 
+          "thumbnail": "assets/images/
