@@ -2,24 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Stream - Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
     <div class="sidebar">
-        <div class="logo">nicholas.</div>
-        <a href="home.html" class="nav-item active"><i class="fa-solid fa-house"></i> <span>Home</span></a>
-        <a href="movies.html" class="nav-item"><i class="fa-solid fa-film"></i> <span>Movies</span></a>
-    </div>
-    <div class="main-content">
-        <h1>Welcome back, Nicholas</h1>
-        <div class="hub-grid">
-            <a href="movies.html" class="hub-card">
-                <i class="fa-solid fa-film"></i>
-                <h2>Movies</h2>
-                <p>Stream your library.</p>
-            </a>
+        <div class="logo-zone">
+            <span class="logo-text">nicholas</span>
         </div>
+        <nav class="nav-menu">
+            <div class="nav-section-title">Navigation</div>
+            <a href="home.html" class="nav-item active"><i class="fa-solid fa-house"></i> Hub Home</a>
+            <a href="movies.html" class="nav-item"><i class="fa-solid fa-film"></i> Movies & TV</a>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-music"></i> Music</a>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-code"></i> Projects</a>
+        </nav>
     </div>
+
+    <div class="main-content">
+        <header class="top-bar">
+            <div class="welcome-message">
+                <h1>Welcome back, Nicholas</h1>
+                <p>Select a portal below to explore your media and builds.</p>
+            </div>
+            <div class="user-profile">
+                <div class="avatar">N</div>
+            </div>
+        </header>
+
+        <main class="hub-stacks">
+            <a href="movies.html" class="hub-stack-card glass-panel">
+                <div class="stack-visual" style="background-image: linear-gradient(to right, rgba(11,9,20,0.95), rgba(11,9,20,0.4)), url('https://image.tmdb.org/t/p/w1280/8Z8ofZ9OorIksW7T57mZ17mZz7O.jpg');"></div>
+                <div class="stack-info">
+                    <div class="stack-icon-title">
+                        <i class="fa-solid fa-film"></i>
+                        <h2>Movies & TV</h2>
+                    </div>
+                    <p>Browse your customized streaming setup. Track series metadata with automated poster displays and interactive layouts.</p>
+                    <span class="stack-action-text">Enter Section <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <div class="hub-stack-card glass-panel locked-stack">
+                <div class="stack-info">
+                    <div class="stack-icon-title">
+                        <i class="fa-solid fa-music"></i>
+                        <h2>Music Collection</h2>
+                    </div>
+                    <p>Audio playback engines, dynamic playlists, and custom audio tracks catalog. Currently offline.</p>
+                    <span class="stack-action-text muted-text"><i class="fa-solid fa-lock"></i> Coming Soon</span>
+                </div>
+            </div>
+
+            <div class="hub-stack-card glass-panel locked-stack">
+                <div class="stack-info">
+                    <div class="stack-icon-title">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Code Projects</h2>
+                    </div>
+                    <p>Live development builds, repositories, and active programming environment setups.</p>
+                    <span class="stack-action-text muted-text"><i class="fa-solid fa-lock"></i> Coming Soon</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
 </body>
 </html>

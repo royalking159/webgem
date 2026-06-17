@@ -2,23 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Catalog - Nicholas Stream</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
     <div class="sidebar">
-        <div class="logo">nicholas.</div>
-        <a href="home.html" class="nav-item"><i class="fa-solid fa-house"></i> <span>Home</span></a>
-        <a href="movies.html" class="nav-item active"><i class="fa-solid fa-film"></i> <span>Movies</span></a>
-    </div>
-    <div class="main-content">
-        <h2 class="section-title">Movies</h2>
-        <div class="catalog">
-            <a href="movie-detail.html" class="movie-card">
-                <div class="poster"><img src="https://image.tmdb.org/t/p/w500/uJg8Q8P7J1xW7vT1vM0dC6d2o3e.jpg"></div>
-                <div class="info">Hazbin Hotel</div>
-            </a>
+        <div class="logo-zone">
+            <a href="home.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Home Hub</a>
+            <span class="logo-text" style="margin-top: 15px;">nicholas</span>
         </div>
+        <nav class="nav-menu">
+            <div class="nav-section-title">Navigation</div>
+            <a href="home.html" class="nav-item"><i class="fa-solid fa-house"></i> Hub Home</a>
+            <a href="movies.html" class="nav-item active"><i class="fa-solid fa-film"></i> Movies & TV</a>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-music"></i> Music</a>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-code"></i> Projects</a>
+        </nav>
     </div>
+
+    <div class="main-content">
+        <header class="top-bar">
+            <div class="search-box glass-panel">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search catalog...">
+            </div>
+            <div class="user-profile">
+                <div class="avatar">N</div>
+            </div>
+        </header>
+
+        <main class="catalog-feed">
+            <section class="category-row">
+                <h2 class="category-title">Movies <span class="count">1</span></h2>
+                <div class="horizontal-scroll custom-scrollbar">
+                    
+                    <a href="movie-detail.html" class="media-card">
+                        <div class="poster-wrapper">
+                            <img src="https://image.tmdb.org/t/p/w500/uJg8Q8P7J1xW7vT1vM0dC6d2o3e.jpg" alt="Hazbin Hotel Poster">
+                            <div class="badge rating"><i class="fa-solid fa-star"></i> 7.7</div>
+                            <div class="card-overlay">
+                                <div class="play-btn-circle"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-title">Hazbin Hotel</span>
+                            <div class="card-sub">
+                                <span class="card-year">2024</span>
+                                <span class="card-type">Series</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
 </body>
 </html>

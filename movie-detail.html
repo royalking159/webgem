@@ -2,17 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazbin Hotel - Nicholas Stream</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="main-content">
-        <a href="movies.html" class="back-btn">&larr; Back</a>
-        <div class="detail-container glass-panel">
-            <h1>Hazbin Hotel</h1>
-            <p>Metadata: 2024 Series, Animation, Comedy</p>
-            <h3>Seasons</h3>
-            <p>Season 1 | Season 2 (Coming Soon)</p>
+
+    <div class="backdrop-blur" style="background-image: url('https://image.tmdb.org/t/p/w1280/8Z8ofZ9OorIksW7T57mZ17mZz7O.jpg');">
+        <div class="backdrop-vignette"></div>
+    </div>
+
+    <div class="sidebar glass-sidebar">
+        <div class="logo-zone">
+            <a href="movies.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Movies</a>
+            <span class="logo-text" style="margin-top: 20px;">nicholas</span>
+        </div>
+        <nav class="nav-menu">
+            <div class="nav-section-title">Navigation</div>
+            <a href="home.html" class="nav-item"><i class="fa-solid fa-house"></i> Hub Home</a>
+            <a href="movies.html" class="nav-item active"><i class="fa-solid fa-film"></i> Movies & TV</a>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-music"></i> Music</a>
+            <a href="#" class="nav-item disabled"><i class="fa-solid fa-code"></i> Projects</a>
+        </nav>
+    </div>
+
+    <div class="main-content detail-layout">
+        <div class="detail-hero">
+            <div class="poster-container">
+                <img class="detail-poster" src="https://image.tmdb.org/t/p/w500/uJg8Q8P7J1xW7vT1vM0dC6d2o3e.jpg" alt="Hazbin Hotel Poster">
+            </div>
+            
+            <div class="detail-info glass-panel p-30">
+                <h1 class="movie-title-main">Hazbin Hotel</h1>
+                
+                <div class="tag-cloud">
+                    <span class="tag rating"><i class="fa-solid fa-star"></i> 7.7 / 10</span>
+                    <span class="tag">2024–</span>
+                    <span class="tag outline">TV-MA</span>
+                    <span class="tag outline">24m</span>
+                    <span class="tag outline">Animation</span>
+                    <span class="tag outline">Musical</span>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary"><i class="fa-solid fa-play"></i> Play Series</button>
+                    <button class="btn btn-secondary"><i class="fa-solid fa-plus"></i> Add Watchlist</button>
+                </div>
+
+                <p class="synopsis">
+                    In an attempt to find a non-violent alternative for reducing Hell's overpopulation, the daughter of Lucifer opens a rehabilitation hotel that offers a group of misfit demons a chance at redemption.
+                </p>
+                
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">Creator</span>
+                        <span class="meta-value">Vivienne Medrano</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Network</span>
+                        <span class="meta-value">Amazon Prime, A24</span>
+                    </div>
+                    <div class="meta-item full-width">
+                        <span class="meta-label">Top Cast</span>
+                        <span class="meta-value">Erika Henningsen, Stephanie Beatriz, Blake Roman, Amir Talai, Keith David</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="episode-deck glass-panel">
+            <div class="deck-header">
+                <h2>Episodes</h2>
+            </div>
+
+            <div class="seasons-bar">
+                <button class="season-tab active" onclick="switchSeason(1)">Season 1</button>
+                <button class="season-tab" onclick="switchSeason(2)">Season 2</button>
+            </div>
+
+            <div class="episode-list-container custom-scrollbar">
+                <div id="season-1-list" class="episode-list active">
+                    <div class="episode-row">
+                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/oE8CThv7w98xWshIofwDIsXGgqf.jpg"></div>
+                        <div class="ep-num">1</div>
+                        <div class="ep-details">
+                            <h3>Overture</h3>
+                            <p>Charlie pitches her hotel plan to Heaven management while building up local staff.</p>
+                        </div>
+                        <div class="ep-duration">25m</div>
+                    </div>
+                    <div class="episode-row">
+                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/c77zL4ZkfeG3q28W6Yt9I6gqD1r.jpg"></div>
+                        <div class="ep-num">2</div>
+                        <div class="ep-details">
+                            <h3>Radio Killed the Video Star</h3>
+                            <p>The Vees monitor Alastor's sudden resurgence while hotel rules challenge occupants.</p>
+                        </div>
+                        <div class="ep-duration">24m</div>
+                    </div>
+                    <div class="episode-row">
+                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/2G09W6VzBbyZqPszjV7FkC1TInH.jpg"></div>
+                        <div class="ep-num">3</div>
+                        <div class="ep-details">
+                            <h3>Scrambled Eggs</h3>
+                            <p>Trust exercises break out within the group alongside defensive strategies.</p>
+                        </div>
+                        <div class="ep-duration">24m</div>
+                    </div>
+                    <div class="episode-row">
+                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/6900R8I005fR05W7O6m00I000R.jpg" onerror="this.src='https://image.tmdb.org/t/p/w300/2G09W6VzBbyZqPszjV7FkC1TInH.jpg'"></div>
+                        <div class="ep-num">4</div>
+                        <div class="ep-details">
+                            <h3>Masquerade</h3>
+                            <p>Angel Dust struggles under the crushing dynamic weight of his contractual obligations.</p>
+                        </div>
+                        <div class="ep-duration">24m</div>
+                    </div>
+                </div>
+
+                <div id="season-2-list" class="episode-list">
+                    <div class="episode-row">
+                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/uJg8Q8P7J1xW7vT1vM0dC6d2o3e.jpg"></div>
+                        <div class="ep-num">1</div>
+                        <div class="ep-details">
+                            <h3>Episode 1</h3>
+                            <p>Season 2 official episodic metadata coming soon following broadcast schedules.</p>
+                        </div>
+                        <div class="ep-duration">--m</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script>
+        function switchSeason(seasonNum) {
+            document.querySelectorAll('.season-tab').forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+            document.querySelectorAll('.episode-list').forEach(list => list.classList.remove('active'));
+            document.getElementById(`season-${seasonNum}-list`).classList.add('active');
+        }
+    </script>
 </body>
 </html>
