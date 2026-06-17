@@ -91,6 +91,24 @@ body {
 
 .user-profile .avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #d946ef); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; cursor: pointer; box-shadow: 0 4px 12px rgba(139,92,246,0.4); }
 
+/* Home Portal Specific Layout */
+.welcome-message h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; letter-spacing: -0.5px; }
+.welcome-message p { color: var(--text-muted); font-size: 14px; }
+.hub-stacks { display: flex; flex-direction: column; gap: 24px; max-width: 1100px; }
+.hub-stack-card { position: relative; display: flex; min-height: 160px; border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s; }
+.hub-stack-card:not(.locked-stack):hover { transform: translateY(-4px); border-color: var(--accent-purple); box-shadow: 0 12px 40px rgba(139, 92, 246, 0.15); }
+.stack-visual { position: absolute; top: 0; right: 0; width: 60%; height: 100%; background-size: cover; background-position: center 20%; z-index: 1; mask-image: linear-gradient(to right, transparent, #000 40%); -webkit-mask-image: linear-gradient(to right, transparent, #000 40%); }
+.stack-info { position: relative; z-index: 2; padding: 30px; display: flex; flex-direction: column; justify-content: center; gap: 10px; width: 60%; }
+.stack-icon-title { display: flex; align-items: center; gap: 12px; color: var(--text-primary); }
+.stack-icon-title i { font-size: 22px; color: var(--accent-purple); }
+.hub-stack-card:hover .stack-icon-title i { color: var(--accent-purple-hover); transform: scale(1.05); }
+.stack-info p { color: var(--text-secondary); font-size: 14px; line-height: 1.5; max-width: 500px; }
+.stack-action-text { font-size: 13px; font-weight: 600; color: var(--accent-purple); display: flex; align-items: center; gap: 6px; margin-top: 5px; transition: gap 0.2s; }
+.hub-stack-card:hover .stack-action-text { color: var(--accent-purple-hover); gap: 10px; }
+.locked-stack { opacity: 0.5; cursor: not-allowed; background: rgba(255,255,255,0.01); border: 1px dashed rgba(255,255,255,0.05); }
+.locked-stack .stack-icon-title i { color: var(--text-muted); }
+.muted-text { color: var(--text-muted) !important; }
+
 /* Category Rows */
 .category-row { margin-bottom: 45px; }
 .category-title { font-size: 20px; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; letter-spacing: -0.3px; }
