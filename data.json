@@ -5,7 +5,7 @@
   "classification": "TV-MA",
   "avgRuntime": "24m",
   "genres": ["Musical", "Dark Comedy", "Animation"],
-  "mainThumbnail": "assets/images/hazbin-main-banner.jpg",
+  "mainThumbnail": "https://github.com/royalking159/webgem/blob/main/HHPostertallS2.jpg?raw=true",
   "description": "In Hell, Charlie Morningstar pursues her seemingly impossible goal of rehabilitating demons to peacefully reduce overpopulation in her kingdom.",
   "seasons": [
     {
@@ -14,7 +14,7 @@
       "episodes": [
         { 
           "id": 1, 
-          "title": "That's Entertainment (Official Pilot)", 
+          "title": "That's Entertainment (Pilot)", 
           "runtime": "31m", 
           "desc": "Charlie Morningstar introduces her ambitious project to the public through a chaotic live television broadcast, hoping to save sinner souls from the yearly purge.",
           "thumbnail": "assets/images/specials-ep1-thumb.jpg"
@@ -66,58 +66,22 @@
           "runtime": "24m", 
           "desc": "Angel Dust struggles with his toxic double life as an adult media star under Valentino's demanding contract, forcing Husk to step in with hard truths.", 
           "thumbnail": "assets/images/s1-ep4-thumb.jpg"
-        }
-      ]
-    },
-    {
-      "seasonNumber": 2,
-      "tabLabel": "Season 2",
-      "episodes": [
-        { 
-          "id": 1, 
-          "title": "New Pentious", 
-          "runtime": "28m", 
-          "desc": "Sir Pentious adjusts to his unexpected new reality in Heaven, navigating celestial social hierarchies while the hotel updates its mission statement down below.", 
-          "thumbnail": "assets/images/s2-ep1-thumb.jpg"
-        },
-        { 
-          "id": 2, 
-          "title": "Storyteller", 
-          "runtime": "28m", 
-          "desc": "Secrets of Lilith's mysterious absence and past bargains begin to unravel as new dynamic threats eye up the power vacuum left in the kingdom.", 
-          "thumbnail": "assets/images/s2-ep2-thumb.jpg"
-        },
-        { 
-          "id": 3, 
-          "title": "Hazbin Hotel: Behind Closed Doors", 
-          "runtime": "28m", 
-          "desc": "The hotel faces new structural challenges and internal disputes as daily therapeutic counseling tests the limits of the demonic residents.", 
-          "thumbnail": "assets/images/s2-ep3-thumb.jpg"
-        },
-        { 
-          "id": 4, 
-          "title": "It's A Deal", 
-          "runtime": "29m", 
-          "desc": "Alastor's tight-lipped bargains and underlying motivations come back into heavy play, shifting alliances among the overlords of Hell.", 
-          "thumbnail": "assets/images/s2-ep4-thumb.jpg"
         },
         { 
           "id": 5, 
-          "title": "Silenced", 
-          "runtime": "28m", 
-          "desc": "An unexpected radio silence falls over Hell's media grid, triggering widespread paranoia regarding an impending systematic purge or regional revolt.", 
-          "thumbnail": "assets/images/s2-ep5-thumb.jpg"
+          "title": "Dad Beat Dad", 
+          "runtime": "25m", 
+          "desc": "Charlie struggles to connect with her eccentric father, King Lucifer, while attempting to secure an urgent meeting with Heaven's higher management.", 
+          "thumbnail": "assets/images/s1-ep5-thumb.jpg"
         },
         { 
           "id": 6, 
-          "title": "Scream Rain", 
-          "runtime": "28m", 
-          "desc": "Tensions boil over into an all-out storm inside the Pride Ring as internal team disagreements reach an explosive, emotional breaking point.", 
-          "thumbnail": "assets/images/s2-ep6-thumb.jpg"
+          "title": "Welcome to Heaven", 
+          "runtime": "27m", 
+          "desc": "Charlie and Vaggie travel directly to the pearly gates of Heaven to present their case, causing a massive stir among the high-ranking Seraphim.", 
+          "thumbnail": "assets/images/s1-ep6-thumb.jpg"
         },
         { 
           "id": 7, 
-          "title": "Weapon of Mass Distraction", 
-          "runtime": "29m", 
-          "desc": "The team scrambles to build a defensive perimeter and secure strategic fallback measures ahead of an aggressive counter-offensive by opposing factions.", 
-          "thumbnail": "assets/images/
+          "title": "Hello Rosie", 
+          "runtime
