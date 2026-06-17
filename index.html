@@ -1,25 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=login.html">
-    <title>Nicholas Stream Hub</title>
-    <style>
-        body { background: #0b0914; color: white; font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .loader { border: 4px solid rgba(255,255,255,0.1); border-left-color: #8b5cf6; border-radius: 50%; width: 45px; height: 45px; animation: spin 0.8s linear infinite; margin-bottom: 20px;}
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        .container { display: flex; flex-direction: column; align-items: center; text-align: center; }
-        p { font-size: 14px; color: #64748b; font-weight: 500; letter-spacing: 0.5px; }
-    </style>
-    <script>
-        setTimeout(() => { window.location.replace("login.html"); }, 200);
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazbin Hotel Matrix Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="loader"></div>
-        <p>CONNECTING TO STREAM INFRASTRUCTURE...</p>
-    </div>
+
+  <div class="content-matrix-container">
+    
+    <!-- LEFT PANEL: MEDIA INFORMATION -->
+    <main class="media-info-panel">
+      <div class="poster-frame-wrapper">
+        <img src="poster-frame.jpg" alt="Hazbin Hotel Content Matrix Poster Frame" class="poster-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="image-fallback">
+          <span>Hazbin Hotel Content Matrix Poster Frame</span>
+        </div>
+      </div>
+      
+      <div class="meta-content">
+        <h1 class="main-title">Hazbin Hotel</h1>
+        
+        <div class="badges-row">
+          <span class="badge highlight">⭐ 7.7 / 10 System</span>
+          <span class="badge">2024–Present</span>
+          <span class="badge">TV-MA Classification</span>
+          <span class="badge">24m Avg Time</span>
+          <span class="badge">Musical Dark Comedy</span>
+        </div>
+        
+        <p class="summary-text">
+          In Hell, Charlie Morningstar, the princess of Hell, pursues her seemingly impossible goal of rehabilitating demons to peacefully reduce overpopulation in her kingdom. She opens a hotel in hopes that patients will "check out" into Heaven.
+        </p>
+        
+        <button class="launch-cta">
+          <span class="play-icon">▶</span> Launch Streaming Service
+        </button>
+      </div>
+    </main>
+
+    <!-- RIGHT PANEL: CATALOG SYSTEM INDEX -->
+    <aside class="episode-catalog-panel">
+      <h2 class="catalog-heading">System Episode Catalog Index</h2>
+      
+      <div class="tab-navigation">
+        <button class="tab-link active" data-target="season-1">Season 1 (Full Index)</button>
+        <button class="tab-link" data-target="season-2">Season 2 (Full Index)</button>
+      </div>
+
+      <!-- SEASON 1 VIEW -->
+      <div class="season-view active" id="season-1">
+        <div class="episode-row">
+          <div class="thumb-box">
+            <img src="ep1-thumb.jpg" alt="" onerror="this.parentNode.classList.add('broken');">
+            <span class="fallback-label">Episode 1 Thumb</span>
+          </div>
+          <span class="episode-number">1</span>
+          <div class="episode-details">
+            <h3>Overture</h3>
+            <p>Charlie pitches her project...</p>
+          </div>
+          <span class="runtime-badge">25m</span>
+        </div>
+
+        <div class="episode-row">
+          <div class="thumb-box">
+            <img src="ep2-thumb.jpg" alt="" onerror="this.parentNode.classList.add('broken');">
+            <span class="fallback-label">Episode 2 Thumb</span>
+          </div>
+          <span class="episode-number">2</span>
+          <div class="episode-details">
+            <h3>Radio Killed the Video Star</h3>
+            <p>Alastor protects the...</p>
+          </div>
+          <span class="runtime-badge">24m</span>
+        </div>
+
+        <div class="episode-row">
+          <div class="thumb-box">
+            <img src="ep3-thumb.jpg" alt="" onerror="this.parentNode.classList.add('broken');">
+            <span class="fallback-label">Episode 3 Thumb</span>
+          </div>
+          <span class="episode-number">3</span>
+          <div class="episode-details">
+            <h3>Scrambled Eggs</h3>
+            <p>Trust exercises...</p>
+          </div>
+          <span class="runtime-badge">24m</span>
+        </div>
+
+        <div class="episode-row">
+          <div class="thumb-box">
+            <img src="ep4-thumb.jpg" alt="" onerror="this.parentNode.classList.add('broken');">
+            <span class="fallback-label">Episode 4 Thumb</span>
+          </div>
+          <span class="episode-number">4</span>
+          <div class="episode-details">
+            <h3>Masquerade</h3>
+            <p>Angel Dust struggles...</p>
+          </div>
+          <span class="runtime-badge">24m</span>
+        </div>
+      </div>
+
+      <!-- SEASON 2 VIEW -->
+      <div class="season-view" id="season-2">
+        <div class="episode-row">
+          <div class="thumb-box">
+            <span class="fallback-label">Ep 1 Thumb</span>
+          </div>
+          <span class="episode-number">1</span>
+          <div class="episode-details">
+            <h3>New Pentious</h3>
+            <p>Sir Pentious adjusts to his new reality...</p>
+          </div>
+          <span class="runtime-badge">28m</span>
+        </div>
+        <div class="episode-row">
+          <div class="thumb-box">
+            <span class="fallback-label">Ep 2 Thumb</span>
+          </div>
+          <span class="episode-number">2</span>
+          <div class="episode-details">
+            <h3>Storyteller</h3>
+            <p>Secrets of the past begin to unravel...</p>
+          </div>
+          <span class="runtime-badge">28m</span>
+        </div>
+        <div class="episode-row">
+          <div class="thumb-box">
+            <span class="fallback-label">Ep 3 Thumb</span>
+          </div>
+          <span class="episode-number">3</span>
+          <div class="episode-details">
+            <h3>Hazbin Hotel: Behind Closed Doors</h3>
+            <p>The hotel faces new structural challenges...</p>
+          </div>
+          <span class="runtime-badge">28m</span>
+        </div>
+        <div class="episode-row">
+          <div class="thumb-box">
+            <span class="fallback-label">Ep 4 Thumb</span>
+          </div>
+          <span class="episode-number">4</span>
+          <div class="episode-details">
+            <h3>It's A Deal</h3>
+            <p>Alastor's bargains come back into play...</p>
+          </div>
+          <span class="runtime-badge">29m</span>
+        </div>
+        <div class="episode-row">
+          <div class="thumb-box">
+            <span class="fallback-label">Ep 5 Thumb</span>
+          </div>
+          <span class="episode-number">5</span>
+          <div class="episode-details">
+            <h3>Silenced</h3>
+            <p>An unexpected silence falls over Hell's media...</p>
+          </div>
+          <span class="runtime-badge">28m</span>
+        </div>
+        <div class="episode-row">
+          <div class="thumb-box">
+            <span class="fallback-label">Ep 6 Thumb</span>
+          </div>
+          <span class="episode-number">6</span>
+          <div class="episode-details">
+            <h3>Scream Rain</h3>
+            <p>Tensions boil over into an all-out storm...</p>
+          </div>
+          <span class="runtime-badge">28m</span>
+        </div>
+        <div class="episode-row">
+          <div class="thumb-box">
+            <span class="fallback-label">Ep 7 Thumb</span>
+          </div>
+          <span class="episode-number">7</span>
+          <div class="episode-details">
+            <h3>Weapon of Mass Distraction</h3>
+            <p>The team scrambles to build a defense...</p>
+          </div>
+          <span class="runtime-badge">29m</span>
+        </div>
+        <div class="episode-row">
+          <div class="thumb-box">
+            <span class="fallback-label">Ep 8 Thumb</span>
+          </div>
+          <span class="episode-number">8</span>
+          <div class="episode-details">
+            <h3>Curtain Call</h3>
+            <p>The conclusion to the season's intense arc...</p>
+          </div>
+          <span class="runtime-badge">38m</span>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+{
+  "show": "Hazbin Hotel",
+  "rating": "7.7 / 10",
+  "years": "2024–Present",
+  "classification": "TV-MA",
+  "avgRuntime": "24m",
+  "genres": ["Musical", "Dark Comedy", "Animation"],
+  "description": "In Hell, Charlie Morningstar pursues her seemingly impossible goal of rehabilitating demons to peacefully reduce overpopulation in her kingdom.",
+  "seasons": [
+    {
+      "seasonNumber": 1,
+      "tabLabel": "Season 1 (Full Index)",
+      "episodes": [
+        { "id": 1, "title": "Overture", "runtime": "25m", "desc": "Charlie pitches her project to heaven." },
+        { "id": 2, "title": "Radio Killed the Video Star", "runtime": "24m", "desc": "Alastor protects the hotel from Vox." },
+        { "id": 3, "title": "Scrambled Eggs", "runtime": "24m", "desc": "Trust exercises cause chaos among the crew." },
+        { "id": 4, "title": "Masquerade", "runtime": "24m", "desc": "Angel Dust struggles with his double life." }
+      ]
+    },
+    {
+      "seasonNumber": 2,
+      "tabLabel": "Season 2 (Full Index)",
+      "episodes": [
+        { "id": 1, "title": "New Pentious", "runtime": "28m", "desc": "Sir Pentious adjusts to his new reality." },
+        { "id": 2, "title": "Storyteller", "runtime": "28m", "desc": "Secrets of the past begin to unravel." },
+        { "id": 3, "title": "Hazbin Hotel: Behind Closed Doors", "runtime": "28m", "desc": "The hotel faces new structural challenges." },
+        { "id": 4, "title": "It's A Deal", "runtime": "29m", "desc": "Alastor's bargains come back into play." },
+        { "id": 5, "title": "Silenced", "runtime": "28m", "desc": "An unexpected silence falls over Hell's media." },
+        { "id": 6, "title": "Scream Rain", "runtime": "28m", "desc": "Tensions boil over into an all-out storm." },
+        { "id": 7, "title": "Weapon of Mass Distraction", "runtime": "29m", "desc": "The team scrambles to build a defense." },
+        { "id": 8, "title": "Curtain Call", "runtime": "38m", "desc": "The conclusion to the season's intense arc." }
+      ]
+    }
+  ]
+}
