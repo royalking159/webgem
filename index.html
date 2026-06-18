@@ -3,269 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hazbin Hotel Matrix Dashboard</title>
-  <link rel="stylesheet" href="styles.css?v=5">
+  <title>Hazbin Hotel Dashboard</title>
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 
-  <!-- SIDE NAVIGATION MENU DRAWER -->
+  <!-- Side Menu -->
   <nav class="side-menu-drawer" id="sideMenu">
     <div class="drawer-header">
       <h2>Navigation</h2>
       <button class="close-btn" id="closeMenuBtn">&times;</button>
     </div>
     <ul class="drawer-links">
-      <li><a href="#" class="active">🏠 Homepage</a></li>
-      <li><a href="#">📺 Live Streaming</a></li>
-      <li><a href="#">📊 System Analytics</a></li>
-      <li><a href="#">⚙️ Settings</a></li>
+      <li><a href="home.html">🏠 Homepage</a></li>
+      <li><a href="movies.html">📺 Live Streaming</a></li>
+      <li><a href="#" class="active">📊 Content Matrix</a></li>
     </ul>
   </nav>
-
-  <!-- BACKGROUND OVERLAY FOR DRAWER -->
   <div class="drawer-overlay" id="drawerOverlay"></div>
 
-  <!-- MAIN APP WRAPPER -->
   <div class="app-wrapper">
-    
-    <!-- TOP NAVIGATION HEADBAR -->
     <header class="app-header">
-      <button class="menu-toggle-btn" id="openMenuBtn">
-        <span>☰</span> Menu
-      </button>
-      <div class="system-status">System Matrix Active</div>
+      <button class="menu-toggle-btn" id="openMenuBtn">☰ Menu</button>
+      <div class="system-status">Matrix Active</div>
     </header>
 
-    <!-- MAIN TWO-COLUMN GRID VIEW CONTAINER -->
     <div class="content-matrix-container">
-      
-      <!-- LEFT PANEL: MEDIA INFORMATION -->
       <main class="media-info-panel">
         <div class="poster-frame-wrapper">
-          <img src="https://github.com/royalking159/webgem/blob/main/HHPostertallS2.jpg?raw=true" alt="Hazbin Hotel Content Matrix Poster Frame" class="poster-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-fallback">
-            <span>Hazbin Hotel Content Matrix Poster Frame</span>
-          </div>
+          <img src="HHPostertallS2.jpg" alt="Poster" class="poster-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-fallback"><span>Poster Frame</span></div>
         </div>
-        
         <div class="meta-content">
-          <h1 class="main-title">Hazbin Hotel</h1>
-          
-          <div class="badges-row">
-            <span class="badge highlight">⭐ 7.7 / 10 System</span>
-            <span class="badge">2019–Present</span>
-            <span class="badge">TV-MA Classification</span>
-            <span class="badge">24m Avg Time</span>
-            <span class="badge">Musical Dark Comedy</span>
-          </div>
-          
-          <p class="summary-text">
-            In Hell, Charlie Morningstar, the princess of Hell, pursues her seemingly impossible goal of rehabilitating demons to peacefully reduce overpopulation in her kingdom. She opens a hotel in hopes that patients will "check out" into Heaven.
-          </p>
-          
-          <button class="launch-cta">
-            <span class="play-icon">▶</span> Launch Streaming Service
-          </button>
+          <h1 id="showTitle">Hazbin Hotel</h1>
+          <div class="badges-row" id="badges"></div>
+          <p class="summary-text" id="desc"></p>
+          <button class="launch-cta">▶ Launch Service</button>
         </div>
       </main>
 
-      <!-- RIGHT PANEL: CATALOG SYSTEM INDEX -->
       <aside class="episode-catalog-panel">
-        <h2 class="catalog-heading">System Episode Catalog Index</h2>
-        
-        <div class="tab-navigation">
-          <button class="tab-link" data-target="specials">Specials</button>
-          <button class="tab-link active" data-target="season-1">Season 1</button>
-          <button class="tab-link" data-target="season-2">Season 2</button>
-        </div>
-
-        <!-- SPECIALS VIEW -->
-        <div class="season-view" id="specials">
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">Specials Ep 1 Thumb</span></div>
-            <span class="episode-number">1</span>
-            <div class="episode-details">
-              <h3>That's Entertainment (Pilot)</h3>
-              <p>Charlie Morningstar introduces her ambitious project to the public through a chaotic live television broadcast, hoping to save sinner souls from the yearly purge.</p>
-            </div>
-            <span class="runtime-badge">31m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">Specials Ep 2 Thumb</span></div>
-            <span class="episode-number">2</span>
-            <div class="episode-details">
-              <h3>Addict (Music Video Special)</h3>
-              <p>A deeper look into Angel Dust and Cherri Bomb's turbulent lives, coping mechanisms, and struggles under the oppressive rule of Valentino in the Pride Ring.</p>
-            </div>
-            <span class="runtime-badge">5m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">Specials Ep 3 Thumb</span></div>
-            <span class="episode-number">3</span>
-            <div class="episode-details">
-              <h3>Look My Way (Music Video Feature)</h3>
-              <p>An emotional musical showcase exploring the complicated web of devotion, past mistakes, and long-distance ties impacting key residents of the hotel network.</p>
-            </div>
-            <span class="runtime-badge">4m</span>
-          </div>
-        </div>
-
-        <!-- SEASON 1 VIEW -->
-        <div class="season-view active" id="season-1">
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S1E1 Thumb</span></div>
-            <span class="episode-number">1</span>
-            <div class="episode-details">
-              <h3>Overture</h3>
-              <p>Charlie pitches her project to heaven, running into aggressive bureaucratic red tape while trying to prove that sinners deserve a chance at redemption.</p>
-            </div>
-            <span class="runtime-badge">25m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S1E2 Thumb</span></div>
-            <span class="episode-number">2</span>
-            <div class="episode-details">
-              <h3>Radio Killed the Video Star</h3>
-              <p>Alastor protects the hotel from Vox and the modern media empire of the Vees as old rivalries flare up on Hell's broadcast networks.</p>
-            </div>
-            <span class="runtime-badge">24m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S1E3 Thumb</span></div>
-            <span class="episode-number">3</span>
-            <div class="episode-details">
-              <h3>Scrambled Eggs</h3>
-              <p>Trust exercises cause chaos among the crew while Sir Pentious tries to infiltrate the hotel with an army of loyal but clumsy Egg Boiz.</p>
-            </div>
-            <span class="runtime-badge">24m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S1E4 Thumb</span></div>
-            <span class="episode-number">4</span>
-            <div class="episode-details">
-              <h3>Masquerade</h3>
-              <p>Angel Dust struggles with his toxic double life as an adult media star under Valentino's demanding contract, forcing Husk to step in with hard truths.</p>
-            </div>
-            <span class="runtime-badge">24m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S1E5 Thumb</span></div>
-            <span class="episode-number">5</span>
-            <div class="episode-details">
-              <h3>Dad Beat Dad</h3>
-              <p>Charlie struggles to connect with her eccentric father, King Lucifer, while attempting to secure an urgent meeting with Heaven's higher management.</p>
-            </div>
-            <span class="runtime-badge">25m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S1E6 Thumb</span></div>
-            <span class="episode-number">6</span>
-            <div class="episode-details">
-              <h3>Welcome to Heaven</h3>
-              <p>Charlie and Vaggie travel directly to the pearly gates of Heaven to present their case, causing a massive stir among the high-ranking Seraphim.</p>
-            </div>
-            <span class="runtime-badge">27m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S1E7 Thumb</span></div>
-            <span class="episode-number">7</span>
-            <div class="episode-details">
-              <h3>Hello Rosie</h3>
-              <p>With the fast-approaching extermination deadline, Charlie travels to Cannibal Town to bargain for an army with the influential Overlord Rosie.</p>
-            </div>
-            <span class="runtime-badge">25m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S1E8 Thumb</span></div>
-            <span class="episode-number">8</span>
-            <div class="episode-details">
-              <h3>The Show Must Go On</h3>
-              <p>An all-out war erupts at the hotel gates as Adam and his angelic exorcist legion clash with the hotel residents in a final, brutal showdown.</p>
-            </div>
-            <span class="runtime-badge">29m</span>
-          </div>
-        </div>
-
-        <!-- SEASON 2 VIEW -->
-        <div class="season-view" id="season-2">
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S2E1 Thumb</span></div>
-            <span class="episode-number">1</span>
-            <div class="episode-details">
-              <h3>New Pentious</h3>
-              <p>Sir Pentious adjusts to his unexpected new reality in Heaven, navigating celestial social hierarchies while the hotel updates its mission statement down below.</p>
-            </div>
-            <span class="runtime-badge">28m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S2E2 Thumb</span></div>
-            <span class="episode-number">2</span>
-            <div class="episode-details">
-              <h3>Storyteller</h3>
-              <p>Secrets of Lilith's mysterious absence and past bargains begin to unravel as new dynamic threats eye up the power vacuum left in the kingdom.</p>
-            </div>
-            <span class="runtime-badge">28m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S2E3 Thumb</span></div>
-            <span class="episode-number">3</span>
-            <div class="episode-details">
-              <h3>Hazbin Hotel: Behind Closed Doors</h3>
-              <p>The hotel faces new structural challenges and internal disputes as daily therapeutic counseling tests the limits of the demonic residents.</p>
-            </div>
-            <span class="runtime-badge">28m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S2E4 Thumb</span></div>
-            <span class="episode-number">4</span>
-            <div class="episode-details">
-              <h3>It's A Deal</h3>
-              <p>Alastor's tight-lipped bargains and underlying motivations come back into heavy play, shifting alliances among the overlords of Hell.</p>
-            </div>
-            <span class="runtime-badge">29m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S2E5 Thumb</span></div>
-            <span class="episode-number">5</span>
-            <div class="episode-details">
-              <h3>Silenced</h3>
-              <p>An unexpected radio silence falls over Hell's media grid, triggering widespread paranoia regarding an impending systematic purge or regional revolt.</p>
-            </div>
-            <span class="runtime-badge">28m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S2E6 Thumb</span></div>
-            <span class="episode-number">6</span>
-            <div class="episode-details">
-              <h3>Scream Rain</h3>
-              <p>Tensions boil over into an all-out storm inside the Pride Ring as internal team disagreements reach an explosive, emotional breaking point.</p>
-            </div>
-            <span class="runtime-badge">28m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S2E7 Thumb</span></div>
-            <span class="episode-number">7</span>
-            <div class="episode-details">
-              <h3>Weapon of Mass Distraction</h3>
-              <p>The team scrambles to build a defensive perimeter and secure strategic fallback measures ahead of an aggressive counter-offensive by opposing factions.</p>
-            </div>
-            <span class="runtime-badge">29m</span>
-          </div>
-          <div class="episode-row">
-            <div class="thumb-box"><span class="fallback-label">S2E8 Thumb</span></div>
-            <span class="episode-number">8</span>
-            <div class="episode-details">
-              <h3>Curtain Call</h3>
-              <p>The thrilling conclusion to the season's intense arc, bringing massive cosmic consequences to both Heaven and Hell as the hotel takes a definitive stand.</p>
-            </div>
-            <span class="runtime-badge">38m</span>
-          </div>
-        </div>
-
+        <h2 class="catalog-heading">Episode Catalog</h2>
+        <div class="tab-navigation" id="tabNav"></div>
+        <div id="episodeViewContainer"></div>
       </aside>
     </div>
   </div>
 
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>

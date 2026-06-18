@@ -1,34 +1,41 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('.tab-link');
-  const views = document.querySelectorAll('.season-view');
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      views.forEach(v => v.classList.remove('active'));
-
-      tab.classList.add('active');
-      const targetId = tab.getAttribute('data-target');
-      document.getElementById(targetId).classList.add('active');
+document.addEventListener('DOMContentLoaded', async () => {
+    const res = await fetch('data.json');
+    const data = await res.json();
+    
+    // Bind Meta
+    document.getElementById('showTitle').innerText = data.show;
+    document.getElementById('desc').innerText = data.description;
+    
+    // Bind Tabs & Episodes
+    const tabNav = document.getElementById('tabNav');
+    const viewContainer = document.getElementById('episodeViewContainer');
+    
+    data.seasons.forEach((s, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'tab-link' + (idx === 1 ? ' active' : '');
+        btn.innerText = s.tabLabel;
+        btn.onclick = () => renderEpisodes(s);
+        tabNav.appendChild(btn);
     });
-  });
 
-  const openMenuBtn = document.getElementById('openMenuBtn');
-  const closeMenuBtn = document.getElementById('closeMenuBtn');
-  const sideMenu = document.getElementById('sideMenu');
-  const drawerOverlay = document.getElementById('drawerOverlay');
+    function renderEpisodes(season) {
+        viewContainer.innerHTML = season.episodes.map(ep => `
+            <div class="episode-row">
+                <div class="thumb-box"></div>
+                <div><h3>${ep.title}</h3><p>${ep.runtime}</p></div>
+            </div>
+        `).join('');
+    }
+    renderEpisodes(data.seasons[1]); // Default S1
 
-  function openDrawer() {
-    sideMenu.classList.add('open');
-    drawerOverlay.classList.add('visible');
-  }
-
-  function closeDrawer() {
-    sideMenu.classList.remove('open');
-    drawerOverlay.classList.remove('visible');
-  }
-
-  openMenuBtn.addEventListener('click', openDrawer);
-  closeMenuBtn.addEventListener('click', closeDrawer);
-  drawerOverlay.addEventListener('click', closeDrawer);
+    // Drawer Logic
+    document.getElementById('openMenuBtn').onclick = () => {
+        document.getElementById('sideMenu').classList.add('open');
+        document.getElementById('drawerOverlay').classList.add('visible');
+    };
+    document.getElementById('closeMenuBtn').onclick = () => {
+        document.getElementById('sideMenu').classList.remove('open');
+        document.getElementById('drawerOverlay').classList.remove('visible');
+    };
 });
