@@ -13,8 +13,7 @@
       "tabLabel": "Specials",
       "episodes": [
         { "id": 1, "title": "That's Entertainment (Pilot)", "runtime": "31m", "desc": "Charlie Morningstar introduces her ambitious project to the public through a chaotic live television broadcast, hoping to save sinner souls from the yearly purge.", "thumbnail": "https://github.com/royalking159/webgem/blob/main/HHPostertallPilot.jpg?raw=true" },
-        { "id": 2, "title": "Addict (Music Video Special)", "runtime": "5m", "desc": "A deeper look into Angel Dust and Cherri Bomb's turbulent lives, coping mechanisms, and struggles under the oppressive rule of Valentino in the Pride Ring.", "thumbnail": "assets/images/specials-ep2-thumb.jpg" },
-        { "id": 3, "title": "Look My Way (Music Video Feature)", "runtime": "4m", "desc": "An emotional musical showcase exploring the complicated web of devotion, past mistakes, and long-distance ties impacting key residents of the hotel network.", "thumbnail": "assets/images/specials-ep3-thumb.jpg" }
+        { "id": 2, "title": "Addict (Music Video Special)", "runtime": "5m", "desc": "A deeper look into Angel Dust and Cherri Bomb's turbulent lives, coping mechanisms, and struggles under the oppressive rule of Valentino in the Pride Ring.", "thumbnail": "assets/images/specials-ep2-thumb.jpg" }
       ]
     },
     {
