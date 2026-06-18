@@ -1,75 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies Catalog - Nicholas Stream</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazbin Hotel Portal - Streaming</title>
+  <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
+  <nav class="side-menu-drawer" id="sideMenu">
+    <div class="drawer-header">
+      <h2>Navigation</h2>
+      <button class="close-btn" id="closeMenuBtn">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="home.html">🏠 Homepage</a></li>
+      <li><a href="movies.html" class="active">📺 Live Streaming</a></li>
+      <li><a href="movie-detail.html">📊 Content Matrix</a></li>
+    </ul>
+  </nav>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
 
-    <!-- Global Layout Sidebar Container Component -->
-    <div class="sidebar">
-        <div class="logo-zone">
-            <a href="home.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Home Hub</a>
-            <span class="logo-text" style="margin-top: 15px;">nicholas</span>
+  <div class="app-wrapper">
+    <header class="app-header">
+      <button class="menu-toggle-btn" id="openMenuBtn">☰ Menu</button>
+      <div class="system-status">Streaming Server Online</div>
+    </header>
+    
+    <main class="portal-main">
+      <h2>Active Streaming Feeds</h2>
+      <div class="stream-layout-grid">
+        <div class="stream-card">
+          <div class="video-placeholder">
+            <span>Primary Media Node [Hazbin Hotel Principal Stream]</span>
+          </div>
+          <div class="stream-details">
+            <h3>Hazbin Hotel Main Feature</h3>
+            <span class="status-indicator live">● LIVE FEED</span>
+            <a href="movie-detail.html" class="action-link-btn">View Catalog Metadata</a>
+          </div>
         </div>
-        <nav class="nav-menu">
-            <div class="nav-section-title">Navigation Workspace</div>
-            <a href="home.html" class="nav-item"><i class="fa-solid fa-house"></i> Hub Home</a>
-            <a href="movies.html" class="nav-item active"><i class="fa-solid fa-film"></i> Movies & TV</a>
-            <a href="#" class="nav-item disabled"><i class="fa-solid fa-music"></i> Music Collection</a>
-            <a href="#" class="nav-item disabled"><i class="fa-solid fa-code"></i> Project Builds</a>
-        </nav>
-    </div>
-
-    <!-- Framing Main View Container -->
-    <div class="main-content">
-        <header class="top-bar">
-            <div class="search-box glass-panel">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search system catalog media tracks...">
-            </div>
-            <div class="user-profile">
-                <div class="avatar">N</div>
-            </div>
-        </header>
-
-        <main class="catalog-feed">
-            
-            <!-- EXPLICIT UN-SIMPLIFIED MEDIA GRID TITLE SPECIFICATION -->
-            <section class="category-row">
-                <h2 class="category-title">Movies <span class="count">1</span></h2>
-                <div class="horizontal-scroll custom-scrollbar">
-                    
-                    <!-- HIGH FIDELITY MEDIA ENVELOPE STRUCTURAL ELEMENT CARD -->
-                    <a href="movie-detail.html" class="media-card">
-                        <div class="poster-wrapper">
-                            <!-- Direct Official Valid TMDB High-Res Structural Content Poster Asset URL Path -->
-                            <img src="https://image.tmdb.org/t/p/w500/r8QA669V3m6vXatCO6g668gIm6F.jpg" alt="Hazbin Hotel Official System Card Media Poster">
-                            <div class="badge rating"><i class="fa-solid fa-star"></i> 7.7</div>
-                            <div class="card-overlay">
-                                <div class="play-btn-circle">
-                                    <i class="fa-solid fa-play"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-meta">
-                            <span class="card-title">Hazbin Hotel</span>
-                            <div class="card-sub">
-                                <span class="card-year">2024</span>
-                                <span class="card-type">Series Stack</span>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-            </section>
-            
-        </main>
-    </div>
-
+      </div>
+    </main>
+  </div>
+  <script src="app.js?v=12"></script>
 </body>
 </html>

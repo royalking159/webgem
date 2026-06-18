@@ -1,83 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicholas Hub - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazbin Hotel Portal - Home</title>
+  <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
-
-    <!-- Global Layout Sidebar Container Component -->
-    <div class="sidebar">
-        <div class="logo-zone">
-            <span class="logo-text">nicholas</span>
-        </div>
-        <nav class="nav-menu">
-            <div class="nav-section-title">Navigation Workspace</div>
-            <a href="home.html" class="nav-item active"><i class="fa-solid fa-house"></i> Hub Home</a>
-            <a href="movies.html" class="nav-item"><i class="fa-solid fa-film"></i> Movies & TV</a>
-            <a href="#" class="nav-item disabled"><i class="fa-solid fa-music"></i> Music Collection</a>
-            <a href="#" class="nav-item disabled"><i class="fa-solid fa-code"></i> Project Builds</a>
-        </nav>
+  <nav class="side-menu-drawer" id="sideMenu">
+    <div class="drawer-header">
+      <h2>Navigation</h2>
+      <button class="close-btn" id="closeMenuBtn">&times;</button>
     </div>
+    <ul class="drawer-links">
+      <li><a href="home.html" class="active">🏠 Homepage</a></li>
+      <li><a href="movies.html">📺 Live Streaming</a></li>
+      <li><a href="movie-detail.html">📊 Content Matrix</a></li>
+    </ul>
+  </nav>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
 
-    <!-- Framing Main View Container -->
-    <div class="main-content">
-        <header class="top-bar">
-            <div class="welcome-message">
-                <h1>Welcome back, Nicholas</h1>
-                <p>Select an operational domain environment gateway stack from below.</p>
-            </div>
-            <div class="user-profile">
-                <div class="avatar">N</div>
-            </div>
-        </header>
-
-        <!-- Vertical Stack Configuration -->
-        <main class="hub-stacks">
-            
-            <!-- Category Matrix Item 1: Movies (ACTIVE GATEWAY ROUTE) -->
-            <a href="movies.html" class="hub-stack-card glass-panel">
-                <div class="stack-visual" style="background-image: linear-gradient(to right, rgba(11,9,20,0.96) 20%, rgba(11,9,20,0.3) 100%), url('https://image.tmdb.org/t/p/w1280/8Z8ofZ9OorIksW7T57mZ17mZz7O.jpg');"></div>
-                <div class="stack-info">
-                    <div class="stack-icon-title">
-                        <i class="fa-solid fa-film"></i>
-                        <h2>Movies & TV</h2>
-                    </div>
-                    <p>Access your fully unsimplified high-fidelity custom streaming interface layout modeling the Stremio structural spec engine. Tracks full dynamic metadata metrics natively.</p>
-                    <span class="stack-action-text">Enter Section Workspace <i class="fa-solid fa-arrow-right"></i></span>
-                </div>
-            </a>
-
-            <!-- Category Matrix Item 2: Music (DISABLED TEMPLATE CONTAINER) -->
-            <div class="hub-stack-card glass-panel locked-stack">
-                <div class="stack-info">
-                    <div class="stack-icon-title">
-                        <i class="fa-solid fa-music"></i>
-                        <h2>Music Collection</h2>
-                    </div>
-                    <p>Core system audio playback layers, user playlist indices, and live audio component configuration engines. Storage nodes currently completely empty.</p>
-                    <span class="stack-action-text muted-text"><i class="fa-solid fa-lock"></i> Workspace Offline</span>
-                </div>
-            </div>
-
-            <!-- Category Matrix Item 3: Projects (DISABLED TEMPLATE CONTAINER) -->
-            <div class="hub-stack-card glass-panel locked-stack">
-                <div class="stack-info">
-                    <div class="stack-icon-title">
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Project Builds</h2>
-                    </div>
-                    <p>Live dev sandbox instances, production deployment configurations, source control endpoints, and live terminal pipelines.</p>
-                    <span class="stack-action-text muted-text"><i class="fa-solid fa-lock"></i> Workspace Offline</span>
-                </div>
-            </div>
-
-        </main>
-    </div>
-
+  <div class="app-wrapper">
+    <header class="app-header">
+      <button class="menu-toggle-btn" id="openMenuBtn">☰ Menu</button>
+      <div class="system-status">Home Portal Active</div>
+    </header>
+    
+    <main class="portal-main">
+      <h1>Welcome to the Hazbin Hotel Portal</h1>
+      <p class="portal-intro">Select an application node below to explore system streams or catalog indices.</p>
+      
+      <div class="portal-grid">
+        <a href="movies.html" class="portal-card">
+          <div class="card-icon">📺</div>
+          <h3>Live Streaming Hub</h3>
+          <p>Access the video streams, active feeds, and live multimedia modules layout.</p>
+        </a>
+        <a href="movie-detail.html" class="portal-card">
+          <div class="card-icon">📊</div>
+          <h3>System Content Matrix</h3>
+          <p>Browse full episode catalogs across seasons, view runtimes, and track episode data indexes.</p>
+        </a>
+      </div>
+    </main>
+  </div>
+  <script src="app.js?v=12"></script>
 </body>
 </html>
