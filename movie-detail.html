@@ -1,215 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hazbin Hotel - Stremio Detail Engine</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazbin Hotel Matrix Dashboard</title>
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
 
-    <!-- Cinematic Backdrop Blur Mirror Spec Layer -->
-    <div class="backdrop-blur" style="background-image: url('https://image.tmdb.org/t/p/w1280/8Z8ofZ9OorIksW7T57mZ17mZz7O.jpg');">
-        <div class="backdrop-vignette"></div>
+  <!-- SIDE NAVIGATION MENU DRAWER -->
+  <nav class="side-menu-drawer" id="sideMenu">
+    <div class="drawer-header">
+      <h2>Navigation</h2>
+      <button class="close-btn" id="closeMenuBtn">&times;</button>
     </div>
+    <ul class="drawer-links">
+      <li><a href="home.html">🏠 Homepage</a></li>
+      <li><a href="movies.html">📺 Live Streaming</a></li>
+      <li><a href="movie-detail.html" class="active">📊 Content Matrix</a></li>
+    </ul>
+  </nav>
 
-    <!-- Global Layout Sidebar Container Component -->
-    <div class="sidebar glass-sidebar">
-        <div class="logo-zone">
-            <a href="movies.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Movies</a>
-            <span class="logo-text" style="margin-top: 20px;">nicholas</span>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="app-wrapper">
+    <header class="app-header">
+      <button class="menu-toggle-btn" id="openMenuBtn">☰ Menu</button>
+      <div class="system-status">System Matrix Active</div>
+    </header>
+
+    <div class="content-matrix-container">
+      
+      <!-- LEFT PANEL: MEDIA INFORMATION -->
+      <main class="media-info-panel">
+        <div class="poster-frame-wrapper">
+          <img src="HHPostertallS2.jpg" alt="Hazbin Hotel Content Matrix Poster Frame" class="poster-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-fallback">
+            <span>Hazbin Hotel Content Matrix Poster Frame</span>
+          </div>
         </div>
-        <nav class="nav-menu">
-            <div class="nav-section-title">Navigation Workspace</div>
-            <a href="home.html" class="nav-item"><i class="fa-solid fa-house"></i> Hub Home</a>
-            <a href="movies.html" class="nav-item active"><i class="fa-solid fa-film"></i> Movies & TV</a>
-        </nav>
-    </div>
-
-    <!-- Framing Main View Container -->
-    <div class="main-content detail-layout">
         
-        <!-- Left Column Block: Information Elements Matrix -->
-        <div class="detail-hero">
-            <div class="poster-container">
-                <img class="detail-poster" src="https://image.tmdb.org/t/p/w500/r8QA669V3m6vXatCO6g668gIm6F.jpg" alt="Hazbin Hotel Content Matrix Poster Frame">
-            </div>
-            
-            <div class="detail-info glass-panel p-30">
-                <h1 class="movie-title-main">Hazbin Hotel</h1>
-                
-                <div class="tag-cloud">
-                    <span class="tag rating"><i class="fa-solid fa-star"></i> 7.7 / 10 System Score</span>
-                    <span class="tag">2024–Present</span>
-                    <span class="tag outline">TV-MA Classification</span>
-                    <span class="tag outline">24m Avg Time</span>
-                    <span class="tag outline">Animation</span>
-                    <span class="tag outline">Musical Dark Comedy</span>
-                </div>
+        <div class="meta-content">
+          <h1 class="main-title" id="showTitle">Hazbin Hotel</h1>
+          
+          <div class="badges-row" id="badgesRow">
+            <!-- Populated via JS safely -->
+          </div>
+          
+          <p class="summary-text" id="summaryText">Loading description...</p>
+          
+          <button class="launch-cta">▶ Launch Streaming Service</button>
+        </div>
+      </main>
 
-                <div class="action-buttons">
-                    <button class="btn btn-primary"><i class="fa-solid fa-play"></i> Launch Streaming Server</button>
-                    <button class="btn btn-secondary"><i class="fa-solid fa-plus"></i> Append to Storage Index</button>
-                </div>
-
-                <p class="synopsis">
-                    In Hell, Charlie Morningstar tries to rehabilitate demons to peacefully reduce overpopulation in her hotel project, attempting to coordinate a non-violent alternative system framework with Heaven's leadership layer.
-                </p>
-                
-                <div class="meta-grid">
-                    <div class="meta-item">
-                        <span class="meta-label">System Creator Head</span>
-                        <span class="meta-value">Vivienne Medrano</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Production Studio Mesh</span>
-                        <span class="meta-value">Amazon MGM Studios, A24</span>
-                    </div>
-                    <div class="meta-item full-width">
-                        <span class="meta-label">Primary Cast Index</span>
-                        <span class="meta-value">Erika Henningsen, Stephanie Beatriz, Blake Roman, Amir Talai, Keith David, Alex Brightman, Kimiko Glenn, Christian Borle, Joel Perez</span>
-                    </div>
-                </div>
-            </div>
+      <!-- RIGHT PANEL: CATALOG SYSTEM INDEX -->
+      <aside class="episode-catalog-panel">
+        <h2 class="catalog-heading">System Episode Catalog Index</h2>
+        
+        <div class="tab-navigation" id="tabNav">
+          <!-- Populated via JS safely -->
         </div>
 
-        <!-- Right Column Block: Full Unsimplified Structural Episode Deck Frame Grid -->
-        <div class="episode-deck glass-panel">
-            
-            <div class="deck-header">
-                <h2>System Episode Catalog Index</h2>
-            </div>
-
-            <!-- Custom Tab Structural Interface -->
-            <div class="seasons-bar">
-                <button class="season-tab active" onclick="switchSeason(1)">Season 1 (Full Index)</button>
-                <button class="season-tab" onclick="switchSeason(2)">Season 2 (Announced)</button>
-            </div>
-
-            <!-- Sequential Storage Blocks -->
-            <div class="episode-list-container custom-scrollbar">
-                
-                <!-- Complete Unsimplified 8-Episode Sequence List Matrix -->
-                <div id="season-1-list" class="episode-list active">
-                    
-                    <!-- Episode Array Element 1 -->
-                    <div class="episode-row">
-                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/oE8CThv7w98xWshIofwDIsXGgqf.jpg" alt="Episode 1 Thumb"></div>
-                        <div class="ep-num">1</div>
-                        <div class="ep-details">
-                            <h3>Overture</h3>
-                            <p>Charlie pitches her redemption hotel idea to Heaven's elite, facing harsh resistance from Adam's execution corps parameters.</p>
-                        </div>
-                        <div class="ep-duration">25m</div>
-                    </div>
-
-                    <!-- Episode Array Element 2 -->
-                    <div class="episode-row">
-                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/c77zL4ZkfeG3q28W6Yt9I6gqD1r.jpg" alt="Episode 2 Thumb"></div>
-                        <div class="ep-num">2</div>
-                        <div class="ep-details">
-                            <h3>Radio Killed the Video Star</h3>
-                            <p>Alastor protects the hotel domain footprint from local overlords Vox and the Vees who feel threatened by his sudden system return.</p>
-                        </div>
-                        <div class="ep-duration">24m</div>
-                    </div>
-
-                    <!-- Episode Array Element 3 -->
-                    <div class="episode-row">
-                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/2G09W6VzBbyZqPszjV7FkC1TInH.jpg" alt="Episode 3 Thumb"></div>
-                        <div class="ep-num">3</div>
-                        <div class="ep-details">
-                            <h3>Scrambled Eggs</h3>
-                            <p>Trust exercises break out within the group alongside strategic defense configurations as Sir Pentious is embedded as an insider.</p>
-                        </div>
-                        <div class="ep-duration">24m</div>
-                    </div>
-
-                    <!-- Episode Array Element 4 -->
-                    <div class="episode-row">
-                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/694RjU2y3L67eOQ986mFIu6RkXQ.jpg" alt="Episode 4 Thumb"></div>
-                        <div class="ep-num">4</div>
-                        <div class="ep-details">
-                            <h3>Masquerade</h3>
-                            <p>Angel Dust struggles under the heavy weight of his contractual soul constraints to Valentino while masking his internal state inside the hotel.</p>
-                        </div>
-                        <div class="ep-duration">24m</div>
-                    </div>
-
-                    <!-- Episode Array Element 5 -->
-                    <div class="episode-row">
-                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/b13tG34UAtO7S1pC3F6h9KjZ9qC.jpg" alt="Episode 5 Thumb"></div>
-                        <div class="ep-num">5</div>
-                        <div class="ep-details">
-                            <h3>Dad Beat Dad</h3>
-                            <p>Charlie's father, Lucifer Morningstar, returns to check on her unique plan framework, leading to massive clashing egos against Alastor's presence.</p>
-                        </div>
-                        <div class="ep-duration">24m</div>
-                    </div>
-
-                    <!-- Episode Array Element 6 -->
-                    <div class="episode-row">
-                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/x5Oskw2wGgP8qYtYmCWh26fX6Nq.jpg" alt="Episode 6 Thumb"></div>
-                        <div class="ep-num">6</div>
-                        <div class="ep-details">
-                            <h3>Welcome to Heaven</h3>
-                            <p>Charlie and Vaggie bypass traditional paths to bring their redemption case directly to the Seraphim, uncovering ancient high-level system secrets.</p>
-                        </div>
-                        <div class="ep-duration">24m</div>
-                    </div>
-
-                    <!-- Episode Array Element 7 -->
-                    <div class="episode-row">
-                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/z0G7n9T10L8E9MZh2hXfR9X6PqY.jpg" alt="Episode 7 Thumb"></div>
-                        <div class="ep-num">7</div>
-                        <div class="ep-details">
-                            <h3>Hello Rosie</h3>
-                            <p>With Extermination Day metrics closing in fast, Charlie gathers a terrifying army of allies out inside Cannibal Town alongside Rosie.</p>
-                        </div>
-                        <div class="ep-duration">25m</div>
-                    </div>
-
-                    <!-- Episode Array Element 8 -->
-                    <div class="episode-row">
-                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/8Z8ofZ9OorIksW7T57mZ17mZz7O.jpg" alt="Episode 8 Thumb"></div>
-                        <div class="ep-num">8</div>
-                        <div class="ep-details">
-                            <h3>The Show Must Go On</h3>
-                            <p>The execution array descends. The hotel residents coordinate a full defensive grid operation to protect their structural home base.</p>
-                        </div>
-                        <div class="ep-duration">27m</div>
-                    </div>
-
-                </div>
-
-                <!-- Season 2 Structural Target Node Placeholder -->
-                <div id="season-2-list" class="episode-list">
-                    <div class="episode-row">
-                        <div class="ep-thumb"><img src="https://image.tmdb.org/t/p/w300/8Z8ofZ9OorIksW7T57mZ17mZz7O.jpg" alt="Season 2 Placeholder"></div>
-                        <div class="ep-num">1</div>
-                        <div class="ep-details">
-                            <h3>Season 2 Narrative Continuum Entry</h3>
-                            <p>Production stage completed. Script, audio, and visual rendering compilation assets scheduled to pipe into global index arrays following release.</p>
-                        </div>
-                        <div class="ep-duration">--m</div>
-                    </div>
-                </div>
-            </div>
-
+        <div id="episodeContainer">
+          <!-- Populated dynamically via JS -->
         </div>
+      </aside>
     </div>
+  </div>
 
-    <!-- Script Controllers Matrix Engine -->
-    <script>
-        function switchSeason(seasonNum) {
-            document.querySelectorAll('.season-tab').forEach(tab => tab.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            document.querySelectorAll('.episode-list').forEach(list => list.classList.remove('active'));
-            document.getElementById('season-' + seasonNum + '-list').classList.add('active');
-        }
-    </script>
+  <script src="app.js?v=10"></script>
 </body>
 </html>
