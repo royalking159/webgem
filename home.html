@@ -1,3 +1,49 @@
-<!DOCTYPE html><html><head><link rel="stylesheet" href="styles.css?v=20"></head><body style="background:#0b090f;color:#fff;padding:40px;font-family:sans-serif;">
-<nav class="side-menu-drawer" id="sideMenu"><div class="drawer-header"><h2>Nav</h2><button class="close-btn" id="closeMenuBtn">&times;</button></div><ul class="drawer-links"><li><a href="home.html" class="active">🏠 Home</a></li><li><a href="movies.html">📺 Streaming</a></li><li><a href="movie-detail.html">📊 Matrix</a></li></ul></nav>
-<div class="drawer-overlay" id="drawerOverlay"></div><button class="menu-toggle-btn" id="openMenuBtn">☰ Menu</button><h1>Home Dashboard Node</h1><p><a href="movie-detail.html" style="color:#7c3aed;">Go to Movie Detail Matrix</a></p><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazbin Hotel Portal - Home</title>
+  <link rel="stylesheet" href="styles.css?v=31">
+</head>
+<body class="stremio-body">
+  <nav class="side-menu-drawer" id="sideMenu">
+    <div class="drawer-header">
+      <h2>Navigation</h2>
+      <button class="close-btn" id="closeMenuBtn">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="home.html" class="active">🏠 Homepage</a></li>
+      <li><a href="movies.html">📺 Live Streaming</a></li>
+      <li><a href="movie-detail.html">📊 Content Matrix</a></li>
+    </ul>
+  </nav>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="app-wrapper">
+    <header class="app-header">
+      <button class="menu-toggle-btn" id="openMenuBtn">☰ Menu</button>
+      <div class="system-status">Home Portal Node</div>
+    </header>
+    
+    <main class="portal-main">
+      <h1 class="portal-title">Hazbin Hotel Portal</h1>
+      <p class="portal-subtitle">Select an application view node below to access the streaming matrix system.</p>
+      
+      <div class="portal-grid">
+        <a href="movies.html" class="portal-card">
+          <div class="card-icon">📺</div>
+          <h3>Live Streaming Hub</h3>
+          <p>Access active multi-node video feeds and real-time live content networks layout.</p>
+        </a>
+        <a href="movie-detail.html" class="portal-card">
+          <div class="card-icon">📊</div>
+          <h3>System Content Matrix</h3>
+          <p>Browse full interactive catalogs, season tabs, and custom data metadata lists.</p>
+        </a>
+      </div>
+    </main>
+  </div>
+  <script src="app.js?v=31"></script>
+</body>
+</html>

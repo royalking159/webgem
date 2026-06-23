@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hazbin Hotel Matrix Dashboard</title>
-  <link rel="stylesheet" href="styles.css?v=20">
+  <title>Hazbin Hotel - Content Matrix</title>
+  <link rel="stylesheet" href="styles.css?v=31">
 </head>
-<body>
+<body class="stremio-body">
 
   <!-- SIDE NAVIGATION MENU DRAWER -->
   <nav class="side-menu-drawer" id="sideMenu">
@@ -20,60 +20,56 @@
       <li><a href="movie-detail.html" class="active">📊 Content Matrix</a></li>
     </ul>
   </nav>
-
   <div class="drawer-overlay" id="drawerOverlay"></div>
 
+  <!-- STREMIO-INSPIRED FULL SCREEN CANVAS -->
   <div class="app-wrapper">
-    <!-- TOP NAVIGATION HEADBAR -->
+    
     <header class="app-header">
-      <button class="menu-toggle-btn" id="openMenuBtn">
-        <span>☰</span> Menu
-      </button>
-      <div class="system-status">System Matrix Active</div>
+      <button class="menu-toggle-btn" id="openMenuBtn">☰ Menu</button>
+      <div class="system-status">Matrix Engine Active</div>
     </header>
 
-    <!-- MAIN TWO-COLUMN GRID VIEW CONTAINER -->
-    <div class="content-matrix-container">
+    <div class="stremio-container">
       
-      <!-- LEFT PANEL: MEDIA INFORMATION -->
-      <main class="media-info-panel">
-        <div class="poster-frame-wrapper">
-          <img src="HHPostertallS2.jpg" alt="Hazbin Hotel Content Matrix Poster Frame" class="poster-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-fallback">
-            <span>Hazbin Hotel Content Matrix Poster Frame</span>
-          </div>
+      <!-- LEFT DESIGN TRACK: FLUSH TYPOGRAPHY DESCRIPTION STACK -->
+      <main class="stremio-left-panel">
+        <div class="backdrop-banner-wrapper">
+          <img src="HHPostertallS2.jpg" alt="Hazbin Hotel Poster" class="stremio-poster-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-fallback"><span>Poster Asset Node</span></div>
         </div>
         
-        <div class="meta-content">
-          <h1 class="main-title" id="showTitle">Hazbin Hotel</h1>
+        <div class="stremio-meta-block">
+          <h1 class="stremio-title" id="showTitle">Hazbin Hotel</h1>
           
           <div class="badges-row" id="badgesRow">
-            <!-- Populated dynamically via JS -->
+            <!-- Loaded dynamically via JS -->
           </div>
           
-          <p class="summary-text" id="summaryText">Loading...</p>
+          <p class="stremio-desc" id="summaryText">Querying matrix datastore indexes...</p>
           
-          <button class="launch-cta">
-            <span class="play-icon">▶</span> Launch Streaming Service
+          <button class="stremio-play-btn">
+            <span class="play-icon-shape">▶</span> Watch Now
           </button>
         </div>
       </main>
 
-      <!-- RIGHT PANEL: CATALOG SYSTEM INDEX -->
-      <aside class="episode-catalog-panel">
-        <h2 class="catalog-heading">System Episode Catalog Index</h2>
+      <!-- RIGHT DESIGN TRACK: FLOATING SIDE PANEL INDEPENDENT CATALOG BOX -->
+      <aside class="stremio-right-panel">
+        <h2 class="catalog-heading">Episodes</h2>
         
         <div class="tab-navigation" id="tabNav">
-          <!-- Populated dynamically via JS -->
+          <!-- Loaded dynamically via JS -->
         </div>
 
-        <div id="episodeContainer">
-          <!-- Populated dynamically via JS -->
+        <div class="episode-scroll-list" id="episodeContainer">
+          <!-- Loaded dynamically via JS -->
         </div>
       </aside>
+
     </div>
   </div>
 
-  <script src="app.js?v=20"></script>
+  <script src="app.js?v=31"></script>
 </body>
 </html>
