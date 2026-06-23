@@ -4,9 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hazbin Hotel Portal - Home</title>
-  <link rel="stylesheet" href="styles.css?v=31">
+  <link rel="stylesheet" href="styles.css?v=55">
+  <style>
+    .home-hero-layout { padding: 60px 0; text-align: center; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+    .home-hero-layout h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; }
+    .home-hero-layout p { color: #897fa1; font-size: 1.15rem; line-height: 1.6; }
+    .navigation-matrix-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 40px; }
+    .node-hub-card { background: #110d19; border: 1px solid rgba(255, 255, 255, 0.04); border-radius: 12px; padding: 40px 30px; text-decoration: none; color: white; display: flex; flex-direction: column; gap: 14px; align-items: center; transition: transform 0.2s, border-color 0.2s; }
+    .node-hub-card:hover { transform: translateY(-4px); border-color: #7c3aed; background: #151021; }
+    .node-hub-card .icon { font-size: 3rem; margin-bottom: 5px; }
+    .node-hub-card h3 { font-size: 1.3rem; font-weight: 700; }
+    .node-hub-card p { text-align: center; color: #897fa1; font-size: 0.95rem; line-height: 1.5; }
+  </style>
 </head>
-<body class="stremio-body">
+<body>
+
   <nav class="side-menu-drawer" id="sideMenu">
     <div class="drawer-header">
       <h2>Navigation</h2>
@@ -23,27 +35,28 @@
   <div class="app-wrapper">
     <header class="app-header">
       <button class="menu-toggle-btn" id="openMenuBtn">☰ Menu</button>
-      <div class="system-status">Home Portal Node</div>
+      <div class="system-status">Portal Terminal Online</div>
     </header>
-    
-    <main class="portal-main">
-      <h1 class="portal-title">Hazbin Hotel Portal</h1>
-      <p class="portal-subtitle">Select an application view node below to access the streaming matrix system.</p>
+
+    <main class="home-hero-layout">
+      <h1>Hazbin Hotel Portal</h1>
+      <p>Stream live system network nodes or browse the complete internal multimedia content matrix catalog indexes.</p>
       
-      <div class="portal-grid">
-        <a href="movies.html" class="portal-card">
-          <div class="card-icon">📺</div>
+      <div class="navigation-matrix-grid">
+        <a href="movies.html" class="node-hub-card">
+          <div class="icon">📺</div>
           <h3>Live Streaming Hub</h3>
-          <p>Access active multi-node video feeds and real-time live content networks layout.</p>
+          <p>Launch high-bitrate video streams layout panels and view ongoing live broadcast node engines.</p>
         </a>
-        <a href="movie-detail.html" class="portal-card">
-          <div class="card-icon">📊</div>
-          <h3>System Content Matrix</h3>
-          <p>Browse full interactive catalogs, season tabs, and custom data metadata lists.</p>
+        <a href="movie-detail.html" class="node-hub-card">
+          <div class="icon">📊</div>
+          <h3>Content Matrix Index</h3>
+          <p>Access the interactive episode selection database, metadata runtime summaries, and season tabs.</p>
         </a>
       </div>
     </main>
   </div>
-  <script src="app.js?v=31"></script>
+
+  <script src="app.js?v=55"></script>
 </body>
 </html>

@@ -4,9 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hazbin Hotel Portal - Streaming</title>
-  <link rel="stylesheet" href="styles.css?v=31">
+  <link rel="stylesheet" href="styles.css?v=55">
+  <style>
+    .stream-layout-grid { display: grid; grid-template-columns: 1fr; gap: 32px; margin-top: 20px; }
+    .stream-card { background: #110d19; border: 1px solid rgba(255, 255, 255, 0.04); border-radius: 12px; overflow: hidden; }
+    .video-placeholder { width: 100%; aspect-ratio: 16/9; background: #000; display: flex; align-items: center; justify-content: center; color: #312b47; font-weight: 600; }
+    .stream-details { padding: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+    .status-indicator.live { color: #ef4444; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; }
+    .action-link-btn { background: #1f1a30; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.05); }
+  </style>
 </head>
-<body class="stremio-body">
+<body>
   <nav class="side-menu-drawer" id="sideMenu">
     <div class="drawer-header">
       <h2>Navigation</h2>
@@ -26,7 +34,7 @@
       <div class="system-status">Streaming Server Online</div>
     </header>
     
-    <main class="portal-main">
+    <main style="padding: 40px 0;">
       <h2 style="text-align: left; font-size: 1.8rem; margin-bottom: 24px;">Active Streaming Feeds</h2>
       <div class="stream-layout-grid">
         <div class="stream-card">
@@ -44,6 +52,6 @@
       </div>
     </main>
   </div>
-  <script src="app.js?v=31"></script>
+  <script src="app.js?v=55"></script>
 </body>
 </html>

@@ -1,44 +1,48 @@
 {
   "show": "Hazbin Hotel",
-  "rating": "⭐ 7.7 / 10 System",
+  "rating": "⭐ 7.7 System",
   "years": "2024–Present",
   "classification": "TV-MA Classification",
   "avgRuntime": "24m Avg Time",
   "genres": "Musical Dark Comedy",
+  "mainThumbnail": "HHPostertallS2.jpg",
   "description": "In Hell, Charlie Morningstar, the princess of Hell, pursues her seemingly impossible goal of rehabilitating demons to peacefully reduce overpopulation in her kingdom. She opens a hotel in hopes that patients will \"check out\" into Heaven.",
   "seasons": [
     {
       "tabLabel": "Specials",
+      "seasonPoster": "HHPostertallPilot.jpg",
       "episodes": [
-        { "id": 1, "title": "That's Entertainment (Pilot)", "runtime": "31m", "desc": "Charlie Morningstar introduces her ambitious project to the public through a chaotic live television broadcast, hoping to save sinner souls from the yearly purge." },
-        { "id": 2, "title": "Addict (Music Video Special)", "runtime": "5m", "desc": "A deeper look into Angel Dust and Cherri Bomb's turbulent lives, coping mechanisms, and struggles under the oppressive rule of Valentino in the Pride Ring." },
-        { "id": 3, "title": "Look My Way (Music Video Feature)", "runtime": "4m", "desc": "An emotional musical showcase exploring the complicated web of devotion, past mistakes, and long-distance ties impacting key residents of the hotel network." }
+        { "id": 1, "title": "That's Entertainment (Pilot)", "runtime": "31m", "rating": "⭐ 8.1 Pilot", "genres": "Pilot Showcase", "desc": "Charlie Morningstar introduces her ambitious project to the public through a chaotic live television broadcast, hoping to save sinner souls from the yearly purge." },
+        { "id": 2, "title": "Addict (Music Video Special)", "runtime": "5m", "rating": "⭐ 8.3 Special", "genres": "Music Feature", "desc": "A deeper look into Angel Dust and Cherri Bomb's turbulent lives, coping mechanisms, and struggles under the oppressive rule of Valentino in the Pride Ring." },
+        { "id": 3, "title": "Look My Way (Music Feature)", "runtime": "4m", "rating": "⭐ 7.9 Special", "genres": "Music Showcase", "desc": "An emotional musical showcase exploring the complicated web of devotion, past mistakes, and long-distance ties impacting key residents of the hotel network." }
       ]
     },
     {
       "tabLabel": "Season 1",
+      "seasonPoster": "HHPostertallS1.jpg",
       "episodes": [
-        { "id": 1, "title": "Overture", "runtime": "25m", "desc": "Charlie pitches her project to heaven, running into aggressive bureaucratic red tape while trying to prove that sinners deserve a chance at redemption." },
-        { "id": 2, "title": "Radio Killed the Video Star", "runtime": "24m", "desc": "Alastor protects the hotel from Vox and the modern media empire of the Vees as old rivalries flare up on Hell's broadcast networks." },
-        { "id": 3, "title": "Scrambled Eggs", "runtime": "24m", "desc": "Trust exercises cause chaos among the crew while Sir Pentious tries to infiltrate the hotel with an army of loyal but clumsy Egg Boiz." },
-        { "id": 4, "title": "Masquerade", "runtime": "24m", "desc": "Angel Dust struggles with his toxic double life as an adult media star under Valentino's demanding contract, forcing Husk to step in with hard truths." },
-        { "id": 5, "title": "Dad Beat Dad", "runtime": "25m", "desc": "Charlie struggles to connect with her eccentric father, King Lucifer, while attempting to secure an urgent meeting with Heaven's higher management." },
-        { "id": 6, "title": "Welcome to Heaven", "runtime": "27m", "desc": "Charlie and Vaggie travel directly to the pearly gates of Heaven to present their case, causing a massive stir among the high-ranking Seraphim." },
-        { "id": 7, "title": "Hello Rosie", "runtime": "25m", "desc": "With the fast-approaching extermination deadline, Charlie travels to Cannibal Town to bargain for an army with the influential Overlord Rosie." },
-        { "id": 8, "title": "The Show Must Go On", "runtime": "29m", "desc": "An all-out war erupts at the hotel gates as Adam and his angelic exorcist legion clash with the hotel residents in a final, brutal showdown." }
+        { "id": 1, "title": "Overture", "runtime": "25m", "rating": "⭐ 7.5 Ep1", "genres": "S1 Overture", "desc": "Charlie pitches her project to heaven, running into aggressive bureaucratic red tape while trying to prove that sinners deserve a chance at redemption." },
+        { "id": 2, "title": "Radio Killed the Video Star", "runtime": "24m", "rating": "⭐ 7.8 Ep2", "genres": "S1 Rivalry", "desc": "Alastor protects the hotel from Vox and the modern media empire of the Vees as old rivalries flare up on Hell's broadcast networks." },
+        { "id": 3, "title": "Scrambled Eggs", "runtime": "24m", "rating": "⭐ 7.4 Ep3", "genres": "S1 Infiltration", "desc": "Trust exercises cause chaos among the crew while Sir Pentious tries to infiltrate the hotel with an army of loyal but clumsy Egg Boiz." },
+        { "id": 4, "title": "Masquerade", "runtime": "24m", "rating": "⭐ 8.5 Ep4", "genres": "S1 Standout", "desc": "Angel Dust struggles with his toxic double life as an adult media star under Valentino's demanding contract, forcing Husk to step in with hard truths." },
+        { "id": 5, "title": "Dad Beat Dad", "runtime": "25m", "rating": "⭐ 7.7 Ep5", "genres": "S1 Family Ties", "desc": "Charlie struggles to connect with her eccentric father, King Lucifer, while attempting to secure an urgent meeting with Heaven's higher management." },
+        { "id": 6, "title": "Welcome to Heaven", "runtime": "27m", "rating": "⭐ 8.2 Ep6", "genres": "S1 Celestial", "desc": "Charlie and Vaggie travel directly to the pearly gates of Heaven to present their case, causing a massive stir among the high-ranking Seraphim." },
+        { "id": 7, "title": "Hello Rosie", "runtime": "25m", "rating": "⭐ 7.9 Ep7", "genres": "S1 Alliances", "desc": "With the fast-approaching extermination deadline, Charlie travels to Cannibal Town to bargain for an army with the influential Overlord Rosie." },
+        { "id": 8, "title": "The Show Must Go On", "runtime": "29m", "rating": "⭐ 8.6 Finale", "genres": "S1 Climax War", "desc": "An all-out war erupts at the hotel gates as Adam and his angelic exorcist legion clash with the hotel residents in a final, brutal showdown." }
       ]
     },
     {
       "tabLabel": "Season 2",
+      "seasonPoster": "HHPostertallS2.jpg",
       "episodes": [
-        { "id": 1, "title": "New Pentious", "runtime": "28m", "desc": "Sir Pentious adjusts to his unexpected new reality in Heaven, navigating celestial social hierarchies while the hotel updates its mission statement down below." },
-        { "id": 2, "title": "Storyteller", "runtime": "28m", "desc": "Secrets of Lilith's mysterious absence and past bargains begin to unravel as new dynamic threats eye up the power vacuum left in the kingdom." },
-        { "id": 3, "title": "Hazbin Hotel: Behind Closed Doors", "runtime": "28m", "desc": "The hotel faces new structural challenges and internal disputes as daily therapeutic counseling tests the limits of the demonic residents." },
-        { "id": 4, "title": "It's A Deal", "runtime": "29m", "desc": "Alastor's tight-lipped bargains and underlying motivations come back into heavy play, shifting alliances among the overlords of Hell." },
-        { "id": 5, "title": "Silenced", "runtime": "28m", "desc": "An unexpected radio silence falls over Hell's media grid, triggering widespread paranoia regarding an impending systematic purge or regional revolt." },
-        { "id": 6, "title": "Scream Rain", "runtime": "28m", "desc": "Tensions boil over into an all-out storm inside the Pride Ring as internal team disagreements reach an explosive, emotional breaking point." },
-        { "id": 7, "title": "Weapon of Mass Distraction", "runtime": "29m", "desc": "The team scrambles to build a defensive perimeter and secure strategic fallback measures ahead of an aggressive counter-offensive by opposing factions." },
-        { "id": 8, "title": "Curtain Call", "runtime": "38m", "desc": "The thrilling conclusion to the season's intense arc, bringing massive cosmic consequences to both Heaven and Hell as the hotel takes a definitive stand." }
+        { "id": 1, "title": "New Pentious", "runtime": "28m", "rating": "⭐ 7.8 Ep1", "genres": "S2 Horizon", "desc": "Sir Pentious adjusts to his unexpected new reality in Heaven, navigating celestial social hierarchies while the hotel updates its mission statement down below." },
+        { "id": 2, "title": "Storyteller", "runtime": "28m", "rating": "⭐ 7.6 Ep2", "genres": "S2 Unraveled", "desc": "Secrets of Lilith's mysterious absence and past bargains begin to unravel as new dynamic threats eye up the power vacuum left in the kingdom." },
+        { "id": 3, "title": "Hazbin Hotel: Behind Closed Doors", "runtime": "28m", "rating": "⭐ 7.5 Ep3", "genres": "S2 Clinical", "desc": "The hotel faces new structural challenges and internal disputes as daily therapeutic counseling tests the limits of the demonic residents." },
+        { "id": 4, "title": "It's A Deal", "runtime": "29m", "rating": "⭐ 8.1 Ep4", "genres": "S2 Overlord", "desc": "Alastor's tight-lipped bargains and underlying motivations come back into heavy play, shifting alliances among the overlords of Hell." },
+        { "id": 5, "title": "Silenced", "runtime": "28m", "rating": "⭐ 7.7 Ep5", "genres": "S2 Paranoia", "desc": "An unexpected radio silence falls over Hell's media grid, triggering widespread paranoia regarding an impending systematic purge or regional revolt." },
+        { "id": 6, "title": "Scream Rain", "runtime": "28m", "rating": "⭐ 8.0 Ep6", "genres": "S2 Tension", "desc": "Tensions boil over into an all-out storm inside the Pride Ring as internal team disagreements reach an explosive, emotional breaking point." },
+        { "id": 7, "title": "Weapon of Mass Distraction", "runtime": "29m", "rating": "⭐ 7.9 Ep7", "genres": "S2 Defensive", "desc": "The team scrambles to build a defensive perimeter and secure strategic fallback measures ahead of an aggressive counter-offensive by opposing factions." },
+        { "id": 8, "title": "Curtain Call", "runtime": "38m", "rating": "⭐ 8.7 Finale", "genres": "S2 Cosmic Stand", "desc": "The thrilling conclusion to the season's intense arc, bringing massive cosmic consequences to both Heaven and Hell as the hotel takes a definitive stand." }
       ]
     }
   ]

@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hazbin Hotel - Content Matrix</title>
-  <link rel="stylesheet" href="styles.css?v=31">
+  <link rel="stylesheet" href="styles.css?v=55">
 </head>
-<body class="stremio-body">
+<body>
 
-  <!-- SIDE NAVIGATION MENU DRAWER -->
   <nav class="side-menu-drawer" id="sideMenu">
     <div class="drawer-header">
       <h2>Navigation</h2>
@@ -22,54 +21,35 @@
   </nav>
   <div class="drawer-overlay" id="drawerOverlay"></div>
 
-  <!-- STREMIO-INSPIRED FULL SCREEN CANVAS -->
   <div class="app-wrapper">
-    
     <header class="app-header">
       <button class="menu-toggle-btn" id="openMenuBtn">☰ Menu</button>
-      <div class="system-status">Matrix Engine Active</div>
+      <div class="system-status">Matrix Deck Rendering</div>
     </header>
 
     <div class="stremio-container">
-      
-      <!-- LEFT DESIGN TRACK: FLUSH TYPOGRAPHY DESCRIPTION STACK -->
+      <!-- Left Dynamic Details Content Panel -->
       <main class="stremio-left-panel">
-        <div class="backdrop-banner-wrapper">
-          <img src="HHPostertallS2.jpg" alt="Hazbin Hotel Poster" class="stremio-poster-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-fallback"><span>Poster Asset Node</span></div>
+        <div class="poster-display-frame">
+          <img src="HHPostertallS2.jpg" alt="Show Poster" id="posterImage">
         </div>
-        
         <div class="stremio-meta-block">
-          <h1 class="stremio-title" id="showTitle">Hazbin Hotel</h1>
-          
-          <div class="badges-row" id="badgesRow">
-            <!-- Loaded dynamically via JS -->
-          </div>
-          
-          <p class="stremio-desc" id="summaryText">Querying matrix datastore indexes...</p>
-          
-          <button class="stremio-play-btn">
-            <span class="play-icon-shape">▶</span> Watch Now
-          </button>
+          <h1 class="stremio-title" id="showTitle">Loading Matrix...</h1>
+          <div class="badges-row" id="badgesRow"></div>
+          <p class="stremio-desc" id="summaryText">Initializing local array matrices...</p>
+          <button class="stremio-play-btn">▶ Watch Now</button>
         </div>
       </main>
 
-      <!-- RIGHT DESIGN TRACK: FLOATING SIDE PANEL INDEPENDENT CATALOG BOX -->
+      <!-- Right Interactive Dynamic List Selection Panel -->
       <aside class="stremio-right-panel">
         <h2 class="catalog-heading">Episodes</h2>
-        
-        <div class="tab-navigation" id="tabNav">
-          <!-- Loaded dynamically via JS -->
-        </div>
-
-        <div class="episode-scroll-list" id="episodeContainer">
-          <!-- Loaded dynamically via JS -->
-        </div>
+        <div class="tab-navigation" id="tabNav"></div>
+        <div class="episode-scroll-list" id="episodeContainer"></div>
       </aside>
-
     </div>
   </div>
 
-  <script src="app.js?v=31"></script>
+  <script src="app.js?v=55"></script>
 </body>
 </html>
